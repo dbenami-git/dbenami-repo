@@ -45,7 +45,7 @@ def load(data: pd.DataFrame, destination_path: str) -> None:
     data.to_csv(destination_path, index=False)
 
 
-def run_etl(file_path: str, destination_path: str) -> None:
+def run_etl_process(file_path: str, destination_path: str) -> None:
     """
     Runs the full ETL process (Extract, Transform, Load).
 
@@ -71,4 +71,4 @@ if __name__ == "__main__":
     destination_file = "transformed_data.csv"  # Replace with your desired destination file path
 
     # Run the ETL process
-    run_etl(source_file, destination_file)
+    run_etl_process(source_file, destination_file)
